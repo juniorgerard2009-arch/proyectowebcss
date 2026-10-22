@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomados - Cursos Especializados</title>
+    <!-- Dejamos únicamente diplomatica.css para evitar que styles.css rompa el menú -->
+    <link rel="stylesheet" href="css/diplomatica.css">
+</head>
+<body>
+
+    <!-- Barra de navegación con Logo solicitado -->
+    <header class="header-main">
+        <div class="header-container">
+            <img src="img/Logo.svg" alt="Devlab Logo" class="logo">
+            <nav class="nav-main">
+                <a href="#">INICIO</a>
+                <a href="#">CURSOS</a>
+                <a href="#">ESPECIALIZACIONES</a>
+                <a href="#">CONTACTOS</a>
+                <a href="#">AULA VIRTUAL</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero con fondo e información principal -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Potencia y actualiza tus conocimientos</h1>
+                <h2>CURSOS ESPECIALIZADOS</h2>
+                <p>Especialízate donde quieras, clases en vivo o de aprendizaje autónomo con expertos en temas de tendencia.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Tarjetas (Grid Layout) -->
+        <section class="areas-interes">
+            <h3>Elige tu área de interés:</h3>
+            
+            <div class="grid-container">
+
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-1.jpg" alt="Especialización en Big Data">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN BIG DATA</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-2.jpg" alt="Especialización en Microsoft Excel">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN MICROSOFT EXCEL</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-3.jpg" alt="Especialización en Power BI">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN POWER BI</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-5.jpg" alt="Especialización en Frontend Developer">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN FRONTEND DEVELOPER</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-6.jpg" alt="Especialización en SQL Server">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN SQL SERVER</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-7.jpg" alt="Especialización en Ciencia de Datos">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN CIENCIA DE DATOS</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/especialidad-8.jpg" alt="Especialización en Diseñador con CSS">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN DISEÑADOR CON CSS</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+                <!-- Tarjeta 8 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/web.jpg" alt="Especialización en Machine Learning">
+                    </div>
+                    <h4>ESPECIALIZACIÓN EN MACHINE LEARNING</h4>
+                    <a href="#" class="btn">Conocer más</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón Flotante de WhatsApp incorporado con SVG nativo -->
+    <a href="https://wa.me" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="#fff">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.864.001-2.641-1.03-5.124-2.904-6.999-1.874-1.874-4.36-2.903-7.002-2.904-5.443 0-9.869 4.414-9.872 9.865-.001 1.75.464 3.453 1.347 4.965l-.98 3.58 3.673-.963zm10.874-4.82c-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+
+    <!-- Vinculación de scripts de JS con carpetas en Mayúsculas -->
+    <script src="JS/WE_MC_02_headroom.min.js"></script>
+    <script src="JS/WE_MC_03_jquery.js"></script>
+    <script src="JS/WE_MC_04_menu-flex.js"></script>
+</body>
+</html>

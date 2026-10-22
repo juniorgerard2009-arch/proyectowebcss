@@ -1,0 +1,204 @@
+/* ==========================================================================
+   VARIABLES CSS REQUERIDAS
+   ========================================================================== */
+:root {
+    --primary-color: #5c6bc0;    /* Tono morado/azul predominante en la guía */
+    --text-dark: #222222;
+    --text-light: #ffffff;
+    --text-muted: #666666;
+    --bg-light: #f8f9fa;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN SUPERIOR
+   ========================================================================== */
+.header-main {
+    background-color: var(--text-light) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.nav-main {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-main a {
+    color: var(--text-dark) !important;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.nav-main a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* ==========================================================================
+   HERO / BANNER DE FONDO
+   ========================================================================== */
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../img/banner-5.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    color: #111;
+    margin: 0 0 15px 0;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   GRID DE PRODUCTOS Y TARJETAS
+   ========================================================================== */
+.areas-interes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.areas-interes h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--text-light);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-img {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h4 {
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    margin: 15px;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 0 20px 20px 20px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.card .btn:hover {
+    background-color: #003d82;
+}
+
+/* ==========================================================================
+   BOTÓN FLOTANTE FIXED DE WHATSAPP (OBLIGATORIO ABAJO A LA IZQUIERDA)
+   ========================================================================== */
+.btn-whatsapp {
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 25px !important;
+    background-color: #25d366 !important;
+    color: white !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    z-index: 99999 !important;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a !important;
+}
