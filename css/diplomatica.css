@@ -9,6 +9,13 @@
     --bg-light: #f8f9fa;
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     --border-radius: 8px;
+    --colorPrimario: #EC111A;
+ --colorSecundario: #082BA5;
+ --colorTerciario: #007BDF;
+ --colorTitulos: #282D31;
+ --colorParrafos: #53575A;
+ --colorSombras: #282D31;
+ --colorBordes:#DFE0E0; 
 }
 
 body {
@@ -202,3 +209,27 @@ body {
     transform: scale(1.1);
     background-color: #20ba5a !important;
 }
+ /*INICIO DE FOOTER */
+ footer{
+    background-color: var(--colorSombras);
+    color: #FFF;
+    padding: 3em 0;
+ }
+  .iconos-pie{
+        font-size: 3em;
+  }
+  .iconos-pie:hover{
+        color: var(--colorPrimario);
+  }
+   
+  .pie .info{
+       font-family: 'Poppins';
+       font-weight: 400;
+       font-size: 1em;
+  }
+  .derechos{
+    background-color: var(--colorPrimario);
+    color: #FFF;
+    font-family: 'Poppins';
+    padding: 5em 0;
+  }

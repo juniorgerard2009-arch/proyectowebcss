@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FAVICON Y/O LOGOTIPO DE LA PÁGINA -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+ <!-- LIBRERÍA DE FUENTES -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- FRAMEWORK DE BOOTSTRAP -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- LIBRERÍA DE ICONOS -->
+
+  <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- Dejamos únicamente diplomatica.css para evitar que styles.css rompa el menú -->
+     <link rel="stylesheet" href="css/diplomatica.css">
+    <link rel="stylesheet" href="css/login.css">
+
+
+</head>
+<body>
+ <body>
+    <!-- Barra de navegación con logo solicitado -->
+    <header class="header-main">
+        <div class="container header-container">
+            <img src="img/Logo.svg" alt="Devlab Logo" class="logo" style="height: 62px;">
+            <nav class="nav-main">
+                <a href="#">INICIO</a>
+                <a href="#">CURSOS</a>
+                <a href="DIPLOMADOS.html">DIPLOMADOS</a>
+                <a href="#">CONTACTOS</a>
+                <a href="#">AULA VIRTUAL</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- AQUÍ SE AGREGA LA SECCIÓN DEL LOGIN -->
+    <main class="login-section">
+        <div class="container login-container-flex">
+            
+            <div class="login-card">
+                <div class="text-center mb-3">
+                    <img src="img/Logo.svg" alt="Devlab Logo" style="height: 55px;">
+                </div>
+                
+                <h2 class="text-center fs-6 fw-bold mb-4" style="color: var(--colorTitulos);">Bienvenidos a nuestra Aula Virtual</h2>
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label small fw-semibold" style="color: var(--colorParrafos);">Usuario:</label>
+                        <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="password" class="form-label small fw-semibold" style="color: var(--colorParrafos);">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                    </div>
+                    
+                    <button type="submit" class="btn w-100 fw-bold custom-btn-red">Ingresar</button>
+                </form>
+                
+                <div class="text-center mt-3">
+                    <a href="#" class="forgot-link small text-decoration-none">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+    
+    
