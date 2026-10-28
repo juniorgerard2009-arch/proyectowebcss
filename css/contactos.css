@@ -1,0 +1,301 @@
+@import url('https://googleapis.com');
+
+/* Reseteeo base y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e9ecef !important; 
+}
+
+/* Forzar el color azul degradado de Devlab */
+/* Estilos exactos para el Banner Azul de Devlab */
+.main-banner {
+    background: linear-gradient(135px, #1a56db 0%, #1e40af 100%) !important; /* El degradado azul de Devlab */
+    padding: 100px 20px !important;
+    width: 100% !important;
+    min-height: 400px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.banner-title {
+    font-size: 45px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.5px !important;
+}
+
+.banner-text {
+    font-size: 16px !important;
+    max-width: 650px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+}
+
+/* Forzar que los enlaces del menú blanco se vean limpios */
+.navbar-light .navbar-nav .nav-link {
+    color: #333333 !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ef1d26 !important;
+}
+
+/* Envoltura intermedia para ordenar la tarjeta */
+.contact-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Contenedor Principal de la Tarjeta */
+.contact-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background-color: #fafafa !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    position: relative;
+}
+
+/* Columna Izquierda: Información */
+.contact-info {
+    width: 45%;
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fbfbfb !important;
+}
+
+.info-title {
+    color: #ef1d26 !important;
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #a0a0a0;
+    font-size: 15px;
+}
+
+.info-list i {
+    color: #ef1d26 !important;
+    font-size: 24px;
+    margin-right: 20px;
+    width: 25px;
+    text-align: center;
+}
+
+.social-section p {
+    color: #888;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #ef1d26 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Círculo decorativo inferior izquierdo */
+.circle-decoration {
+    position: absolute;
+    bottom: -40px;
+    left: 40%;
+    width: 120px;
+    height: 120px;
+    border: 15px solid #d4f1eb;
+    border-radius: 50%;
+}
+
+/* Columna Derecha: Formulario */
+.contact-form {
+    width: 55%;
+    padding: 50px 40px;
+    background-color: #ef1d26 !important; 
+    position: relative;
+    overflow: hidden;
+    color: #fff !important;
+}
+
+.form-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de los campos usando Fieldset */
+.input-group {
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-radius: 25px !important;
+    padding: 0 20px 5px 20px !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+}
+
+.input-group legend {
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    margin-left: 10px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    float: none !important;
+    width: auto !important;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100% !important;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    color: #fff !important;
+    font-size: 15px !important;
+}
+
+.textarea-group {
+    border-radius: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.textarea-group textarea {
+    resize: none !important;
+    height: 90px !important;
+}
+
+/* Botón Enviar Ovalado Blanco */
+.btn-send {
+    background-color: #fff !important;
+    color: #ef1d26 !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 10px 40px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    align-self: flex-start; 
+    margin-top: 5px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Botón Flotante WhatsApp */
+.btn-wssp {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 20px !important;
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #25d366 !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 30px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    z-index: 1000 !important;
+    text-decoration: none !important;
+}
+
+/* Corrección Definitiva del Footer Extendido */
+.footer-completo {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+    display: block !important;
+    margin-top: 50px !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.footer-top {
+    background-color: #2a2e33 !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.footer-bottom {
+    background-color: #ef1d26 !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Mantener el WhatsApp Flotante a la izquierda */
+.btn-wssp-left {
+    position: fixed !important;
+    bottom: 30px !important;
+    left: 20px !important;
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #25d366 !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 32px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    z-index: 2000 !important;
+    text-decoration: none !important;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column !important;
+    }
+    .contact-info, .contact-form {
+        width: 100% !important;
+    }
+    .circle-decoration {
+        display: none !important; 
+    }
+}
