@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Huancayo - Bienvenido Colaborador</title>
+    
+    <!-- RUTA CORREGIDA: Apunta a tu carpeta css/login.2.css -->
+    <link rel="stylesheet" href="css/login.2.css">
+    
+    <!-- Iconos para los campos del formulario -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <!-- Sección Izquierda: Imagen Ilustrativa de la Plaza -->
+        <div class="login-artwork">
+            <img src="img/Captura de pantalla 2026-10-28 071919.png" alt="Ilustración Plaza">
+        </div>
+
+        <!-- Sección Derecha: Formulario de Credenciales -->
+        <div class="login-form-section">
+            <div class="login-box">
+                
+                <!-- Logo Corporativo -->
+                <div class="logo-container">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">Caja <span>Huancayo</span></span>
+                </div>
+
+                <h2>Bienvenido Colaborador</h2>
+                <p class="subtitle">Ingresa tus credenciales</p>
+
+                <form>
+                    <!-- Campo de Entrada: Usuario -->
+                    <div class="input-group">
+                        <input type="text" placeholder="Usuario" required>
+                        <i class="fas fa-user input-icon"></i>
+                    </div>
+
+                    <!-- Campo de Entrada: Contraseña -->
+                    <div class="input-group">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class="fas fa-eye-slash input-icon"></i>
+                    </div>
+
+                    <!-- Opciones de Recordar / Recuperar cuenta -->
+                    <div class="form-options">
+                        <label class="toggle-container">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <span class="label-text">Recordar usuario</span>
+                        </label>
+                        <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+                    </div>
+
+                    <!-- Cuadro de Verificación No soy un robot -->
+                    <div class="captcha-container">
+                        <label class="captcha-checkbox">
+                            <input type="checkbox" required>
+                            <span class="captcha-text">No soy un robot</span>
+                        </label>
+                        <div class="captcha-logo">
+                            <img src="https://wikimedia.org" alt="reCAPTCHA">
+                            <span>reCAPTCHA</span>
+                        </div>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="btn-submit">Ingresar</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* Restablecimiento de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor Principal en Pantalla Completa u Horizontal */
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Sección de la Ilustración (Izquierda) */
+.login-artwork {
+    flex: 1.2;
+    background-color: #dedede;
+    position: relative;
+}
+
+.login-artwork img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(30%) contrast(90%); /* Tono sepia similar al de la imagen */
+}
+
+/* Sección del Formulario (Derecha) */
+.login-form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo del Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #b92333; /* Rojo institucional corporativo */
+    border-radius: 6px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.logo-text span {
+    color: #b92333;
+}
+
+/* Títulos principales */
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 35px;
+}
+
+/* Grupos de entrada de datos (Inputs) */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 0px;
+    border: none;
+    border-bottom: 1.5px solid #cccccc;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: transparent;
+}
+
+.input-group input:focus {
+    border-bottom-color: #b92333;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Opciones de Recordar y Olvidé */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+/* Switch / Toggle slider */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-container input {
+    display: none;
+}
+
+.slider {
+    width: 36px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-right: 8px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-container input:checked + .slider {
+    background-color: #b92333;
+}
+
+.toggle-container input:checked + .slider::before {
+    transform: translateX(16px);
+}
+
+.label-text {
+    color: #555555;
+}
+
+.forgot-link {
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-link:hover {
+    color: #b92333;
+    text-decoration: underline;
+}
+
+/* Contenedor Captcha Simulado */
+.captcha-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    padding: 12px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.captcha-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.captcha-checkbox input {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.captcha-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    color: #555555;
+}
+
+.captcha-logo img {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 2px;
+}
+
+/* Botón de envío */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #b92333;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: #961c29;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Ajustes Adaptables (Responsivo) */
+@media (max-width: 768px) {
+    .login-artwork {
+        display: none;
+    }
+    .login-container {
+        height: auto;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .login-form-section {
+        padding: 20px;
+    }
+}
